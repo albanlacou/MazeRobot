@@ -19,11 +19,13 @@ public class move : MonoBehaviour
     {
         var rigidbody = GetComponent<Rigidbody2D>();
         Vector2 move = new Vector2(joy.Horizontal * 4, joy.Vertical * 4);
-        RaycastHit2D raycast =  Physics2D.Raycast(transform.position, move);
-        if(raycast.collider == null)
+        RaycastHit2D raycast =  Physics2D.Raycast(transform.position, move,distance:2.5f);
+        rigidbody.velocity = move;
+        if (raycast.collider == null)
         {
-            rigidbody.velocity = move;
-        }
+            
+
+       }
 
         
         
