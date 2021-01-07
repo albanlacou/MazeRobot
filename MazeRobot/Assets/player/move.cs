@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class move : NetworkBehaviour
-{   
+{
     
     protected Joystick joy;
     // Start is called before the first frame update
@@ -30,9 +30,8 @@ public class move : NetworkBehaviour
         {
             
 
-       }
-
-        
-        
+        }
+         
     }
+    
 }
